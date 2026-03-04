@@ -247,23 +247,50 @@ body {
 
 /* --- Responsive pour petits écrans --- */
 @media (max-width: 768px) {
+    body {
+        overflow: hidden;
+        /* Forcer pour annuler tout scroll sur mobile */
+        position: fixed;
+        /* Éviter l'effet rebond sur iOS */
+        width: 100%;
+        height: 100%;
+    }
+
     .title {
-        font-size: 3rem;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
     }
 
     .title .name {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     .message {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
     }
 
     .gift-box {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .romantic-content {
         padding: 1.5rem;
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+        /* Permettre un petit scroll INTRERNE si l'écran est minuscule */
+    }
+
+    .music-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    #countdown-text {
+        font-size: 10rem;
     }
 }
