@@ -1,0 +1,7 @@
+# Pas besoin de copier les dossiers Git et workflows dans l'image Docker
+.git/
+.github/
+.gitignore
+README.md
+Dockerfile
+.dockerignore
