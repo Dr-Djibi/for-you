@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire !</title>
+    <!-- Chargement de la box CSS et des polices -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Lecteur caché pour la musique -->
+    <video id="bg-music" loop style="display: none;">
+        <source src="https://files.catbox.moe/s8s93q.mp4" type="video/mp4">
+    </video>
+
+    <!-- Étape 1 : Le cadeau -->
+    <div id="gift-container" class="screen active">
+        <div class="gift-box" id="open-gift">
+            🎁
+        </div>
+        <p class="click-text">Clique sur le cadeau...</p>
+    </div>
+
+    <!-- Étape 2 : Le décompte -->
+    <div id="countdown-container" class="screen">
+        <h1 id="countdown-text">5</h1>
+    </div>
+
+    <!-- Étape 3 : Célébration romantique avec coeurs -->
+    <div id="celebration-container" class="screen">
+        <button id="music-toggle" class="music-btn" style="display: none;">🔊 Pause</button>
+        <div class="romantic-content">
+            <h1 class="title">Joyeux Anniversaire <br><span class="name">Salématou</span> ❤️</h1>
+            <p class="message text-1">Joyeux anniversaire à la plus adorable des "vilaines" ! 😜</p>
+            <p class="message text-2">En ce jour spécial, je tenais à te dire à quel point tu es une personne
+                exceptionnelle.</p>
+            <p class="message text-3">Ta répartie, ton intelligence et cette petite touche de caractère qui te va si
+                bien font que chaque discussion avec toi est un vrai plaisir. Tu as ce don rare de rendre les échanges
+                simples et captivants à la fois.</p>
+            <p class="message text-4">Je te souhaite tout le bonheur du monde, la réussite dans tes projets et surtout,
+                de rester la femme rayonnante et authentique que tu es.</p>
+            <p class="message text-5">Profite à fond de ta journée, Salematou, tu mérites ce qu'il y a de mieux ! 🎂✨
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
