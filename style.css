@@ -18,7 +18,9 @@ body {
     color: var(--text-color);
     font-family: var(--font-main);
     overflow: hidden;
-    /* Cacher les barres de défilement pour les coeurs */
+    overflow-x: hidden;
+    /* Cacher explicitement le défilement horizontal */
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
